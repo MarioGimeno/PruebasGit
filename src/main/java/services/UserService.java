@@ -1,10 +1,9 @@
 package services;
 
-import com.example.demo.Entities.User;
+import Entities.User;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import repositories.RepositoryUser;
 
 import java.util.List;
@@ -18,8 +17,8 @@ public class UserService {
     private RepositoryUser repositoryUser;
 
     // Obtener todos los usuarios
-    public List<User> getAllUsers() {
-        return repositoryUser.findAll();
+    public String getAllUsers() {
+        return "Retornando desde getAllUsers";
     }
 
     // Obtener un usuario por ID
