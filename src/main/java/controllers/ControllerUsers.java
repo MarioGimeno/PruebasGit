@@ -4,6 +4,7 @@ package controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import services.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 @RequestMapping("/users")
 public class ControllerUsers {
 
-    ServiceController serviceController = new ServiceController();
+    UserService serviceController = new UserService();
     @GetMapping("/")
     public String getAllUsers(){
         return serviceController.getAllUsers();
