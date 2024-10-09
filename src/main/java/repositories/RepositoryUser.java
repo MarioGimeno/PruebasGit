@@ -15,4 +15,7 @@ public interface RepositoryUser extends JpaRepository<User, Long> {
 
    String hola = "Soy un lindo gatito";
 
+
+   String cambio = "Nuevooo cambio mehaces un push porfa";
+
 }
