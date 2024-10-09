@@ -21,7 +21,7 @@ public class UserService {
     }
 
     // Obtener un usuario por ID
-    public Optional<User> getUserById(Long id) {
+    public Optional<User> getUserById(int id) {
         return repositoryUser.findById(id);
     }
 
@@ -31,7 +31,7 @@ public class UserService {
     }
 
     // Actualizar un usuario existente
-    public User updateUser(Long id, User userDetails) {
+    public User updateUser(int id, User userDetails) {
         return repositoryUser.findById(id).map(user -> {
             user.setName(userDetails.getName());
             user.setEmail(userDetails.getEmail());
@@ -40,7 +40,7 @@ public class UserService {
     }
 
     // Eliminar un usuario
-    public void deleteUser(Long id) {
+    public void deleteUser(int id) {
         if (repositoryUser.existsById(id)) {
             repositoryUser.deleteById(id);
         } else {
