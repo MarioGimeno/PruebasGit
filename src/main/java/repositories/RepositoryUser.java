@@ -7,4 +7,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface RepositoryUser extends JpaRepository<User, Long> {
    String nombre = "Marta";
+
+   String holi = "Mariooooooooooo hola :D";
+
+   
 }
