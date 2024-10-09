@@ -10,4 +10,7 @@ public interface RepositoryUser extends JpaRepository<User, Long> {
    String apellido = "Diego";
    String perro = "Baloo";
 
+
+   String hola = "Soy un lindo gatito";
+
 }
