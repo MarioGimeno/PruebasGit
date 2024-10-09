@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface RepositoryUser extends JpaRepository<User, Long> {
    String nombre = "Marta";
    String apellido = "Diego";
+   String perro = "Baloo";
+
 }
