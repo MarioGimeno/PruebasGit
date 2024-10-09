@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class User {
-//MARTA ESTO ES UN COMENTARIO
+//MARTA ESTO ES UN COMENTARIOss
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
