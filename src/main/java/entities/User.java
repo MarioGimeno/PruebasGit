@@ -10,6 +10,13 @@ import jakarta.persistence.Id;
 public class User {
 //MARTA ESTO ES UN COMENTARIOss
     //ESTO ES OTRO COMENTARIO
+
+
+    String perribonito = "Pitersito";
+
+
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
