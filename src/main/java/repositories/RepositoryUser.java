@@ -9,5 +9,5 @@ public interface RepositoryUser extends JpaRepository<User, Long> {
    String nombre = "Marta";
    String apellido = "Diego";
    String perro = "Baloo";
-
+   String perro2 = "Pitah";
 }
